@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello WebsocketController!{% endblock %}
+
+{% block stylesheets %}
+    <link href="{{ asset('resources/style.css') }}" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block body %}
+    <div id="chat"></div>
+    <div>
+        <div class="form-group">
+            <label for="name">Name:</label> <input type="text" id="name">
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label> <input type="text" id="message">
+        </div>
+        <button type="button" id="sendBtn">Send</button>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('resources/index.js') }}" type="text/javascript"></script>
+{% endblock %}
